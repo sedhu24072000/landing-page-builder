@@ -1,0 +1,91 @@
+.landingPage {
+    max-width: 1200px; 
+    height: auto; 
+    margin: 40px auto; 
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1d3557, #457b9d, #a8dadc);
+    color: #f1faee;
+    padding: 40px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  .heroText {
+    width: 70%; /* ReactQuill content */
+  }
+  
+  .heroImage {
+    width: 30%; /* Image section */
+  }
+  
+  .heroImage img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  /* Features Section */
+  .features {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    gap: 30px;
+  }
+  
+  .feature {
+    width: 32%; /* Adjust to fit three columns */
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+  }
+  
+  /* About Section */
+  .about {
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  
+  @media (max-width: 768px) {
+    .landingPage {
+      max-width: 100%;
+      padding: 20px;
+    }
+  
+    .hero {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .heroText, .heroImage {
+      width: 100%;
+    }
+  
+    .features {
+      flex-direction: column;
+    }
+  
+    .feature {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  

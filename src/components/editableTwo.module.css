@@ -1,0 +1,196 @@
+.layout {
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #f4f4f4; /* Soft off-white background */
+    color: black;
+    padding: 40px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically center content */
+    gap: 20px;
+    padding: 40px 20px;
+    background-color: #f4f4f4; /* Hero background color */
+    border-bottom: 2px solid black;
+  }
+  
+  /* ReactQuill Card (Left side) */
+  .heroCard:nth-child(1) {
+    width: 70%; /* Takes 70% width on large screens */
+    background-color: var(--F1B);
+    padding: 20px;
+  }
+  
+  /* Image Card (Right side) */
+  .heroCard:nth-child(2) {
+    width: 30%; /* Takes 30% width on large screens */
+    background-color: var(--F2B);
+    display: flex;
+    justify-content: center; /* Center the image */
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  /* Image inside the Hero */
+  .heroCard img {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* Adjust max width for image size */
+    object-fit: cover; /* Ensure the image covers the space without distortion */
+  }
+  
+  /* Responsive Design for Small Screens */
+  @media (max-width: 768px) {
+    .hero {
+      flex-direction: column; /* Stack the hero content vertically */
+      gap: 20px; /* Add spacing between the stacked elements */
+    }
+  
+    .heroCard:nth-child(1),
+    .heroCard:nth-child(2) {
+      width: 100%; /* Make each card take full width on smaller screens */
+    }
+  
+    .heroCard img {
+      max-width: 100%; /* Ensure the image scales correctly */
+    }
+  }
+  
+  /* Features Section */
+  .features {
+    display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 40px 0;
+  }
+  
+  .featureCard {
+    background-color: white; /* Keeping the card white for contrast */
+  border: 2px solid black;
+  padding: 30px;
+  border-radius: 8px;
+  flex: 1;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (max-width: 1024px) {
+  
+    .featureCard {
+      flex: 1 1 45%; /* Two columns for medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+  
+    .featureCard {
+      flex: 1 1 100%; /* One column on small screens */
+    }
+  }
+  
+  /* About Section */
+  .about {
+    background-color: #f4f4f4; /* Same as layout background */
+    padding: 40px;
+    text-align: center;
+    border-top: 2px solid black;
+  }
+  
+  .previewButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0; /* Add space above and below the button */
+  }
+  
+  .previewButton {
+    background-color: #007BFF; /* Blue color */
+    color: white;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 30px; /* Rounded corners */
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Shadow for a 3D effect */
+  }
+  
+  .previewButton:hover {
+    background-color: #0056b3; /* Darker blue for hover effect */
+    transform: translateY(-3px); /* Slight lift effect */
+  }
+  
+  .previewButton:active {
+    transform: translateY(0); /* Reset on click */
+  }
+  
+  
+  .backgroundInputs {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: 40px auto 0; /* Added margin-top to create space from the content above */
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box; /* Ensures padding is included in width calculation */
+  }
+  
+  .inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .inputGroup label {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .inputGroup input {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    width: 100%; /* Ensures input field takes full width of the container */
+    box-sizing: border-box; /* Ensures padding doesn't cause the input to overflow */
+  }
+  
+  .inputGroup input:focus {
+    border-color: #007bff;
+  }
+  
+  .inputGroup input::placeholder {
+    color: #888;
+  }
+  
+  @media (max-width: 768px) {
+    .backgroundInputs {
+      padding: 15px;
+      gap: 15px;
+    }
+  
+    .inputGroup label {
+      font-size: 1rem;
+    }
+  
+    .inputGroup input {
+      font-size: 0.95rem;
+      padding: 10px;
+    }
+  }
+ 
+  
